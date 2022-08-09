@@ -1,0 +1,1004 @@
+<!doctype html>
+<html lang="en" class="en_US logged-out"> 
+
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<script>
+var pageProps = {};
+window.pageName = "";
+pageProps.pageName = "donation: select recipient";
+
+// Categories, facets, promo groups
+
+// var catsList = [];
+
+
+// pageProps.catsList = catsList;
+// pageProps.cats = catsList.join('/');
+
+// var facetsList = [];
+
+// pageProps.facetsList = facetsList;
+// pageProps.facets = facetsList.join('+');
+
+// var promoGroupsList = [];
+
+// pageProps.promoGroupsList = promoGroupsList;
+// pageProps.promoGroups = promoGroupsList.join('+');
+
+
+// messages = [];
+
+
+// pageProps.messages = messages;
+
+</script>
+
+<script>
+
+// window.dataLayer = window.dataLayer || [];
+
+// dataLayer.push ({
+//   "venueType": "prod",
+//   "lang": "en_US",
+//   "pageName": pageProps.pageName,
+//   "pageId": "donationSelect",
+//   "section": "donation",
+//   "subsection": "",
+//   "cats": pageProps.cats,
+//   "facets": pageProps.facets,
+//   "promoGroups": pageProps.promoGroups,
+//   "parameters": pageProps.parameters,
+//   "query": pageProps.query,
+//   "messages": pageProps.messages,
+// });
+
+// Impressions
+
+// "id":"$auction.id",
+// "name":"$auction.getTitle($selectedLang, 250)",
+// "price":"$auction.currentBid",
+// "brand":"Bvlgari",
+// "category":"Men/Clothing/T-Shirts",
+// "position":0,
+// "variant":"Blue",
+// "list":"Category page"
+
+
+// ECommerce
+
+
+
+const gtmImpressions = [];
+
+</script>
+    <meta charset="UTF-8">
+
+<title>Tennessee Titans Auctions</title>
+<meta name="title" content="">
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+
+  <meta property="og:title" content="Tennessee Titans Auctions" />
+
+<meta property="og:type" content="website" />
+
+  <meta property="og:image" content="" />
+
+  <meta property="og:url" content="https://auctions.tennesseetitans.com/iSynApp/showPage.action?sid=1104141&pageName=donation&selectedCatId=-1" />
+  
+  <link rel="canonical" href="https://auctions.tennesseetitans.com/iSynApp/showPage.action?sid=1104141&pageName=donation&selectedCatId=-1">
+
+  <meta property="og:description" content="" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" href="/WBStatic/site1104141/dist/img/favicon.png" />
+
+      
+  <link rel="stylesheet" type="text/css" href="https://vafloc01.s3.amazonaws.com/WBStatic/site1104141/dist/css/style.css?v=1.2">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  
+
+
+          <script type="text/javascript" charset="utf-8">
+
+	// Big assumption, JavaScript engine for the browser needs to be single threaded
+	var jsCallId = 0;
+	var jsCallIdName = "jsCallId";
+	var jsCallBackFunctionMap = {};
+	var jsSessionCookieName = "isynsession";
+
+	// Get next call id
+	var jsGetNextCallId = function() {
+		jsCallId = jsCallId + 1;
+		return jsCallId;
+	}
+
+	// Get a unique call back handler for the call id and then remove if from the function map
+	var jsGetCallBackFunction = function(callId) {
+		var callBackRef = jsCallIdName + callId;
+		var foundCallBack = jsCallBackFunctionMap[callBackRef];
+		delete jsCallBackFunctionMap[callBackRef];
+		return foundCallBack;
+	}
+
+	// Set a unique call back handler for the call id
+	var jsSetCallBackFunction = function(callId, callBackFunction) {
+		if (typeof callBackFunction=="undefined") {
+			return;
+		}
+		var callBackRef = jsCallIdName + callId;
+		jsCallBackFunctionMap[callBackRef] = callBackFunction;
+	}
+
+	// Populate a session cookie if available
+	var jsGetLoginSessionValue = function() {
+		jsSessionCookieValue = jQuery.cookie(jsSessionCookieName);
+		if (typeof jsSessionCookieValue!="undefined") {
+			return jsSessionCookieValue;
+		}
+		else {
+			return "";
+		}
+	}
+
+	// Set a session cookie if available using the json data received from the call
+	var jsProcessLoginResponse = function(jsData) {
+		if (jsData.jsStatus == "success") {
+    		jQuery.cookie(jsSessionCookieName, jsData.jsSessionValue, { path: '/' });
+    	}
+	}
+
+	// Merge two parameter maps
+	var jsMergeParams = function(toMap, fromMap){
+	    // copy params from fromMap to toMap
+		for (fromMapName in fromMap) {
+		   toMap[fromMapName] = fromMap[fromMapName];
+		}
+		return toMap;
+	}
+
+	// Prepare a fresh parameter map for a server call
+	var jsSubmitParams = function(currentCallId){
+	    // get an associative array of just the values.
+	    var values = {};
+	    values[jsCallIdName] = currentCallId;
+	    values[jsSessionCookieName] = jsGetLoginSessionValue();
+	    return values;
+	}
+
+	// Prepare a parameter map for a server call using a form id from the DOM
+	var jsSubmitFormInputs = function(jqFormId, currentCallId){
+		// get all the inputs into an array.
+	    var inputs = jQuery(jqFormId).serializeArray();
+
+	    // get an associative array of just the values.
+	    var values = jsSubmitParams(currentCallId);
+	    jQuery.each(inputs, function(i, input){
+	        values[input.name] = jQuery(input).val();
+    	});
+	    return values;
+	}
+
+	// Submit a get request and register a call back handler for the response from the call
+	var jsSubmitGetRequestForCallId = function(callId, formAction, formParamsMap, formCallBack) {
+		// store the call back function
+		jsSetCallBackFunction(callId, formCallBack);
+		jQuery.getJSON(formAction+"?jsCallBack=?", formParamsMap, function(jsData) {
+			if (typeof jsData.jsCallId!="undefined") {
+				// get the call back function
+				callBackFunction = jsGetCallBackFunction(jsData.jsCallId);
+				if (typeof callBackFunction!="undefined") {
+					callBackFunction(jsData);
+				}
+			}
+		});
+	}
+
+	// Use a form id from the DOM to locate the form action and parameters to submit a form silently
+	var jsSubmitForm = function(formId, formCallBack) {
+		var jqFormId = "#" + formId;
+		var currentCallId = jsGetNextCallId();
+
+		// prepare the call param map
+		var formInputMap = jsSubmitFormInputs(jqFormId, currentCallId);
+
+		// prepare call action
+		var formInputAction = jQuery(jqFormId).attr("action");
+
+		// make the call
+		jsSubmitGetRequestForCallId(currentCallId, formInputAction, formInputMap, formCallBack);
+		return false;
+	}
+
+	// Submit a get request using a request url and parameter map
+	var jsSubmitGetRequestForUrl = function(requestUrl, requestParamsMap, requestCallBack) {
+
+		// setup call id
+		var currentCallId = jsGetNextCallId();
+
+		// prepare the call param map
+		var requestInputMap = jsSubmitParams(currentCallId);
+
+		// merge the parameters
+		jsMergeParams(requestInputMap, requestParamsMap);
+
+		// make the call
+		jsSubmitGetRequestForCallId(currentCallId, requestUrl, requestInputMap, requestCallBack);
+	}
+
+	// Reload auction updates from the registered auction reference list for the registered domain
+	var jsAuctionRefList = "";
+
+	var jsEnquiryName = "enquiryList";
+	var jsEnquiryId = "aucId";
+	var jsEnquiryRef = "aucRef";
+	var jsEnquiryBidHist = "aucBidHist";
+	var jsAuctionUpdateUri = "/iSynApp/viewAuction!listUpdates.action";
+	var jsReferenceTimeUri = "/iSynApp/viewAuction!referenceTime.action";
+
+	var jsAuctionUpdateHost = "";
+	var jsAuctionUpdateMillis = 0;
+	var jsAuctionRefereshCount = 0;
+	var jsAuctionRefereshIdx = 0;
+	var jsAuctionTriggerMillis = 0;
+	var jsTimerMillis = 1000;
+
+	var jsReferenceTimerMillis = 20000;
+	var jsReferenceTriggerMillis = 0;
+
+	var jsOffetMillis = 0;
+
+	var jsAucEndTimeMillisGMT = {};
+	var jsAucFinalStatus = {};
+	var jsAucRefMax = 0;
+
+	var jsTimerTick = function() {
+
+		// check if auction update is required
+		jsAuctionTriggerMillis = jsAuctionTriggerMillis + jsTimerMillis;
+		if (jsAuctionTriggerMillis > jsAuctionUpdateMillis) {
+			jsAuctionTriggerMillis = 0;
+			jsReloadAuctionUpdates();
+		}
+
+		// do reference time check
+		jsReferenceTriggerMillis = jsReferenceTriggerMillis + jsTimerMillis;
+		if (jsReferenceTriggerMillis > jsReferenceTimerMillis) {
+			jsReferenceTriggerMillis = 0;
+			jsReferenceTimeUpdates();
+		}
+
+		// show timer tick
+		if (jsAucRefMax > 0) {
+			var localCurrentMillis = new Date().getTime();
+			for (var jsAucRefIdx = 1; jsAucRefIdx <= jsAucRefMax; jsAucRefIdx++) {
+				var jqAucClosingMillisRef = "#Item" + jsAucRefIdx + "ClosingSec";
+				var jqAucFinalStatusRef = "#Item" + jsAucRefIdx + "FinalStatus";
+				var itemClosingMillis = jsAucEndTimeMillisGMT[jqAucClosingMillisRef];
+				var itemFinalStatus = jsAucFinalStatus[jqAucFinalStatusRef];
+				displayClosingSeconds = Math.floor((itemClosingMillis - localCurrentMillis - jsOffetMillis) / 1000);
+				jsProcessAuctionTick(jqAucClosingMillisRef, displayClosingSeconds, itemFinalStatus);
+			}
+		}
+
+		// check if another tick needs to be registered
+		if (jsAuctionRefereshIdx < jsAuctionRefereshCount) {
+			// re-register a timeout tick
+			jsAuctionRefereshIdx = jsAuctionRefereshIdx + 1;
+			// console.log("jsAuctionRefereshIdx:" + jsAuctionRefereshIdx + "; jsTimerMillis:" + jsTimerMillis + ";");
+			setTimeout(jsTimerTick, jsTimerMillis); // 1 second tick
+		}
+		else {
+			// show that auto refresh is complete, need to reenable if required
+			jQuery.magnificPopup.open({
+				items: {
+					src: '#livebid-note', // can be a HTML string, jQuery object, or CSS selector
+					type: 'inline'
+				},
+				preloader: false
+			});
+		}
+	}
+
+	// Process auction updates using the json data received from the call
+	var jsProcessReferenceTime = function(jsData) {
+
+		if (jsData.jsStatus == "success") {
+			if (typeof jsData.timeUpdate!="undefined") {
+				jsOffetMillis = jsData.timeUpdate.timeOffsetMillis;
+			}
+    	}
+
+	}
+
+	// Register a request to reload auction updates
+	var jsReferenceTimeUpdates = function() {
+
+		// prepare param map
+		var requestParamsMap = {};
+		requestParamsMap["timeClientMillis"] = new Date().getTime();
+
+		// make the call to get the time
+		var fullReferenceTimeUrl = jsAuctionUpdateHost + jsReferenceTimeUri;
+		jsSubmitGetRequestForUrl(fullReferenceTimeUrl, requestParamsMap, jsProcessReferenceTime);
+
+	}
+
+	var jsProcessAuctionUpdates;
+	var jsProcessAuctionTick;
+
+	// Register a request to reload auction updates
+	var jsReloadAuctionUpdates = function() {
+
+		// check if references are populated
+		if (typeof jsAuctionRefList=="undefined" || jsAuctionRefList=="") {
+			return;
+		}
+
+		// prepare param map
+		var requestParamsMap = {};
+		var pIdx = 0;
+
+		// prepare the reference array and iterate the DOM to load the values
+		var auctionRefArray = jsAuctionRefList.split(';');
+
+		jQuery.each(auctionRefArray, function(i, auctionRef){
+			var jqAucIdName = "#" + auctionRef + "AucId";
+			var jqAucIdValue = jQuery(jqAucIdName).val();
+
+			var jqBidHistValue = vafBidHistCount;
+			if (typeof jqAucIdValue!="undefined" && jqAucIdValue!="" && auctionRef!="") {
+				var elName = jsEnquiryName + "[" + pIdx + "].";
+				requestParamsMap[elName + jsEnquiryRef] = auctionRef;
+				requestParamsMap[elName + jsEnquiryId] = jqAucIdValue;
+				requestParamsMap[elName + jsEnquiryBidHist] = jqBidHistValue;
+				// prepare pIdx for the next
+				pIdx = pIdx + 1;
+			}
+    	});
+
+		// make the call to get the updates
+		var fullAuctionUpdateUrl = jsAuctionUpdateHost + jsAuctionUpdateUri;
+		jsSubmitGetRequestForUrl(fullAuctionUpdateUrl, requestParamsMap, jsProcessAuctionUpdates);
+
+	}
+
+	// Enable automatic auction updates
+	var jsEnableAuctionUpdates = function(auctionRefList, auctionUpdateHost, auctionUpdateMillis, auctionRefereshCount, processAuctionUpdates, processAuctionTick) {
+		jsAuctionRefList = auctionRefList;
+		jsAuctionUpdateHost = auctionUpdateHost;
+		jsAuctionUpdateMillis = auctionUpdateMillis;
+		jsAuctionRefereshCount = auctionRefereshCount;
+		jsAuctionRefereshIdx = 0;
+
+		if (jsAuctionUpdateMillis < 3000) {
+			jsAuctionUpdateMillis = 3000;
+		}
+
+		if (jsAuctionRefereshCount > 900) {
+			jsAuctionRefereshCount = 900;
+		}
+
+		jsProcessAuctionUpdates = processAuctionUpdates;
+		jsProcessAuctionTick = processAuctionTick;
+		jsReferenceTimeUpdates();
+		jsReloadAuctionUpdates();
+		jsTimerTick();
+	}
+
+	// Disable automatic auction updates
+	var jsDisableAuctionUpdates = function() {
+		jsProcessAuctionUpdates = 0;
+		jsProcessAuctionTick = 0;
+		jsAuctionRefereshCount = 0;
+		jsAuctionRefereshIdx = 0;
+	}
+
+</script>
+      
+
+  
+
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KHD0LCX994"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KHD0LCX994');
+</script>
+
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-ML4GTFJ');</script>
+<!-- End Google Tag Manager -->
+
+</head>
+	<script type="text/javascript" charset="utf-8">
+		var vafBidHistCount = 0;
+
+		// Process auction updates using the json data received from the call
+		var jsDefaultProcessAuctionUpdates = function(jsData) {
+
+			if (jsData.jsStatus == "success") {
+				if (typeof jsData.auctionUpdateMap!="undefined") {
+
+					var pIdx = 1;
+					jQuery.each(jsData.auctionUpdateMap, function(i, auctionRef) {
+
+						var jqBidAmtName = "#" + auctionRef.aucRef + "BidAmt";
+						var jqBidCountName = "#" + auctionRef.aucRef + "BidCount";
+						var jqAucVersionName = "#" + auctionRef.aucRef + "AucVersion";
+						var jqAucClosingMillisRef = "#" + auctionRef.aucRef + "ClosingSec";
+						var jqFinalStatusName = "#" + auctionRef.aucRef + "FinalStatus";
+						jQuery(jqBidAmtName).html("$" +""+ auctionRef.currentBid.toFixed(2));
+						jQuery(jqBidCountName).html(auctionRef.bidCount);
+						jQuery(jqFinalStatusName).html(auctionRef.finalizeStatus);
+						jsAucEndTimeMillisGMT[jqAucClosingMillisRef] = auctionRef.endTimeMillisGMT;
+						jsAucFinalStatus[jqFinalStatusName] = auctionRef.finalizeStatus;
+						pIdx = pIdx + 1;
+
+	    			}); 
+
+	    			jsAucRefMax = pIdx;
+				}
+	    	}
+
+		}
+
+		function padNum (num) {
+			if (num < 10) {
+				return "0" + num;
+			}
+			else {
+				return num;
+			}
+		}
+
+		function secondsToDaysHourMinSec(remSeconds) {
+		  var days, hours, minutes, seconds;
+		  seconds = remSeconds;
+		  minutes = Math.floor(seconds / 60);
+		  seconds = seconds % 60;
+		  hours = Math.floor(minutes / 60);
+		  minutes = minutes % 60;
+		  days = Math.floor(hours / 24);
+		  hours = hours % 24;
+		  return "" + padNum(days) + " days " + padNum(hours) + ":" + padNum(minutes) + ":" + padNum(seconds);
+		}
+
+		// Process auction time tick
+		var jsDefaultProcessAuctionTick = function(aucClosingSecondRef, aucClosingSecond, aucFinalStatus) {
+			if (aucFinalStatus == "Y") {
+				jQuery(aucClosingSecondRef).html("Closed");
+			}
+			else if (aucClosingSecond <= 0) {
+				jQuery(aucClosingSecondRef).html("Closing");
+			}
+			else {
+				jQuery(aucClosingSecondRef).html(secondsToDaysHourMinSec(aucClosingSecond));
+			}
+		}
+
+	</script>
+    <link rel="stylesheet" href="styles.css">
+
+<body id="donationSelect" class="donation">
+    <a href="#content" class="skip">Skip to content</a>
+    <header class="shadow-sm">
+        <div class="top-header text-center">
+            <a href="/iSynApp/showHomePage.action?sid=1104141" class="brand logo-area"><img src="https://auctions.tennesseetitans.com/WBStatic/site1104140/dist/img/mainlogo.png"></a>
+            <a href="/iSynApp/showHomePage.action?sid=1104141" class="brand logo-area-print"><img src="https://auctions.tennesseetitans.com/WBStatic/site1104140/dist/img/mainlogo-print.png"></a>
+        </div>
+        <div class="mid-header">                         
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <div class="navbar-collapse">
+                        <ul class="navbar-nav mr-auto main-nav">
+                            <li class="nav-item"><a class="nav-link" href="/iSynApp/showHomePage.action?sid=1104141">Home</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="quicksearch_toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Quick Search</a>
+                                <div class="dropdown-menu" aria-labelledby="quicksearch_toggle">
+                                 
+									<a class="dropdown-item" href="/iSynApp/allAuction.action?sid=1104141&rc=12&sort=title_asc">All Auctions</a>
+									<a class="dropdown-item" href="/iSynApp/allAuction.action?sid=1104141&rc=12&sort=bidcount_desc&pgmode2=hotitems">Most Popular</i></a>
+									<a class="dropdown-item" href="/iSynApp/allAuction.action?sid=1104141&rc=12&sort=timeleft_asc&pgmode2=closingsoon">Closing Soon</a>
+									<a class="dropdown-item" href="/iSynApp/allAuction.action?sid=1104141&rc=12&sort=createts_desc&pgmode2=createts_desc">Just Opened</a>
+									<a class="dropdown-item" href="/iSynApp/allAuction.action?sid=1104141&rc=12&pgmode2=recentlysold&sort=timeleft_desc&qMode=closed">Recently Sold</a>
+
+                                </div>
+                            </li>
+							
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="auctions_toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Auctions</a>
+                                <div class="dropdown-menu" aria-labelledby="auctions_toggle">
+                                    <a class="dropdown-item" href="/iSynApp/allAuction.action?sid=1104141&rc=12&sort=title_asc">All Auctions</a>
+                                    <a class="dropdown-item" href="/iSynApp/allAuction.action?sid=1104141&rc=12&sort=$sort&pgmode2=catpage&layout=$layout&selectedCatId=28924"><span>Footballs</a><a class="dropdown-item" href="/iSynApp/allAuction.action?sid=1104141&rc=12&sort=$sort&pgmode2=catpage&layout=$layout&selectedCatId=28909"><span>Game Used</a>
+                                    <a class="dropdown-item" href="/iSynApp/allAuction.action?sid=1104141&rc=12&sort=$sort&pgmode2=catpage&layout=$layout&selectedCatId=28925"><span>Helmets</a>
+                                    <a class="dropdown-item" href="/iSynApp/allAuction.action?sid=1104141&rc=12&sort=$sort&pgmode2=catpage&layout=$layout&selectedCatId=28910"><span>Jerseys</a>
+                                    <a class="dropdown-item" href="/iSynApp/allAuction.action?sid=1104141&rc=12&sort=$sort&pgmode2=catpage&layout=$layout&selectedCatId=28886"><span>Miscellaneous</a>
+                                    <a class="dropdown-item" href="/iSynApp/allAuction.action?sid=1104141&rc=12&sort=$sort&pgmode2=catpage&layout=$layout&selectedCatId=28911"><span>Sports Memorabilia</a>																												
+                                </div>
+                            </li>		
+                            <li class="nav-item"><a class="nav-link" href="#">Donate</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html">Experiences</a></li>
+                        </ul>
+                        <ul class="navbar-nav account-links">
+                            <li class="nav-item pos-relative">
+                                <div style="display: none;" id="search_type" value="both"></div>
+                                <form id="search_form" class="site-search" action="/iSynApp/allAuction.action" method="get">
+                                <input type="hidden" name="sid" value="1104141" />
+                                <input type="hidden" name="noSiteFilter" value="Y" />
+                                <input type="hidden" name="selectedCatId" value="28681" />
+                                <input type="hidden" name="rc" value="10" />
+                                <input type="hidden" name="sort" value="timeleft_asc" />
+                                <input type="hidden" name="queryfield" value="title" />
+                                <input type="hidden" name="pgmode2" value="search" />
+                                <button type="submit" id="search_btn" class="btn-ghost search-icon"><i class="fa fa-search"></i></button>
+                                
+                                                                <div class="input-group search-group">
+                                                                    <div class="input-group-prepend">
+                                                                        <input type="text" class="form-control shadow-none init-search-input" id="search_input" type="search" name="query" placeholder="Search...">
+                                                                        <span class="input-group-text init-search"><i class="fas fa-search"></i></span>
+                                                                    </div>
+                                                                </div> 
+
+                                </form>
+                                <div id="search_results">
+                                <ul><li tabindex="0"><strong>Type at least three characters to see results.</strong></li></ul>
+                                </div>
+                                <style>
+                                .site-search,
+                                .pos-relative {
+                                    position: relative;
+                                }
+
+                                /*#search_input {
+                                    background: #fff;
+                                    box-shadow: none;
+                                    border: 0;
+                                    font-size: 12px;
+                                    width: 320px;
+                                    color: #000;
+                                    padding: 3px 30px 3px 10px;
+                                    height: auto;
+                                }*/
+
+                                .search-icon {
+                                    position: absolute;
+                                    right: 17px;
+                                    top: 7px;
+                                    font-size: 20px;
+                                    opacity: 0.3;
+                                    padding: 0;
+                                    background-color: transparent;
+                                    border: 0;
+                                    outline: none;
+                                }
+
+                            /*@media screen and (max-width: 1029px) {
+                                .site-search input[type="search"],
+                                .site-search input[type="text"] {
+                                    width: 100% !important;
+                                    float: left;
+                                    margin-right: 0;
+                                }
+                            }*/
+
+                            .main-header,
+                            .masthead {
+                                position: relative;
+                            }
+                            
+                            #search_results {
+                                display: none;
+                                position: absolute;
+                                top: 100%;
+                                background-color: #fff;
+                                padding: 0;
+                                border: 1px solid #ccc;
+                                z-index: 999;
+                                width: 320px;
+                                max-height: 400px;
+                                overflow: auto;
+                                min-height: auto;
+                                margin-top: -2px;
+                                font-size: 14px;
+                                right: 3px;
+                            }
+
+                            #search_results p {
+                                margin-bottom: 0;
+                            }
+
+                            #search_results ul {
+                                list-style: none;
+                                padding: 10px;
+                            }
+
+                            #search_results ul li {
+                                margin-bottom: 20px;
+                                border-bottom: 1px solid #eee;
+                                padding-bottom: 20px;
+                                min-height: 100px;
+                                display: inline-block;
+                            }
+
+                            #search_results ul li:last-child {
+                                margin-bottom: 0;
+                                padding-bottom: 0;
+                                border-bottom: 0;
+                            }
+
+                            #search_results .search-thumb {
+                                float: left;
+                                width: 40%;
+                            }
+
+                            #search_results .search-thumb img {
+                                padding: 5px;
+                                background-color: #fff;
+                                border: 1px solid #ccc;
+                            }
+
+                            #search_results .search-title {
+                                float: right;
+                                width: 55%;
+                                color: #000;
+                                font-size: 14px;
+                                text-transform: none;
+                            }
+
+                            #search_results .search-current-bid {
+                                display: block;
+                                font-size: 14px;
+                                color: #a2a2a2;
+                            }
+
+                            #search_results .search-current-bid span {
+                                color: #036;
+                                font-weight: 600;
+                            }
+
+                            @media (max-width: 991px) {
+
+                                #search_results {
+                                    width: auto;
+                                right: 15px;
+                                left: 15px;
+                                margin: 0 auto;
+                                margin-top: 3px;
+                                }
+
+                            }
+                                </style>
+							</li>
+                            <li class="nav-item">							
+								<a class="nav-link" href="/iSynApp/appUserLogin!input.action?sid=1104141"><i class="far fa-user"></i></a>
+							</li>
+                            <li class="nav-item nav-item-cart">
+                                <a class="nav-link" href="/iSynApp/venueCheckout!showStep1.action?sid=1104141&pb=ioc1-1241195936589791"><i class="fas fa-shopping-cart"></i> <span class="cart-num">0</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <img src="./titansexperiencesBanner.png" alt="" style="width: 100%;height: 30vh;object-fit: cover;"  >
+    </div>
+
+    <section class="listing my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 main-listings">
+                    <div class="section-header d-flex justify-content-between align-items-center mb-4">
+                        <h3>Experiences</h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="item-listing item-y item-bg-white shadow-sm eq-height">
+                                <img class="img-fluid w-100 mb-3" src="./titansfanphotos.webp">
+                                <h5>Titan UP Kid of the Game</h5>
+                                <div class="eq-height-content">
+                                    <ul>
+                                        <li>All new Titans Foundation Titan Up Kid of the Game</li>
+                                        <li>Winning bidder will have their son/daughter go on field to retrieve the Titans Kicking Tee to start the second half of the game!!</li>
+                                        <li>Will appear on videoboards with name, winning bidder and Titans Foundation logo</li>
+                                        <li>Package includes: 4 club seats, 4 pre-game field passes for each game, group photo</li>
+                                        <li><b>Projected bids at every home game: $1,500-2,500+</b></li>
+                                    </ul>      
+                                </div>
+                                <a class="btn btn-brand btn-block text-light shadow-none px-4 py-2" href="experiences.html#">View More</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="item-listing item-y item-bg-white shadow-sm eq-height">
+                                
+                                <img class="img-fluid w-100 mb-3" src="./titansVIPexperiences.png">
+                                <h5>On Field Titans UP Flag during Titans Player Intros</h5>
+                                <div class="eq-height-content">
+                                    <ul>
+                                        <li>Chance to go on field during player warm up and have VIP access with pre-game
+                                            field passes</li>
+                                        <li>Then escorted actually on field to participate in the giant Titan UP Flag ceremony
+                                            prior to each home game</li>
+                                        <li>VIP Guests will be on field during player intros and national anthem</li>
+                                        <li>Package includes 4 lower bowl seats and 4 pre-game field passes, group photo</li>
+                                        <li><b>Projected bids at every home game: $1,500-2,500+</b></li>
+                                    </ul>      
+                                </div>
+                                <a class="btn btn-brand btn-block text-light shadow-none px-4 py-2" href="experiences.html#2">View More</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="item-listing item-y item-bg-white shadow-sm eq-height">
+                                
+                                <img class="img-fluid w-100 mb-3" src="./titansVIPexperiences.png">
+                                <h5>Home Team Tunnel Experience</h5>
+                                <div class="eq-height-content">
+                                    <ul>
+                                        <li>Work with Ticketing Dept. on existing game day implementation</li>
+                                        <li>Includes 4 lower bowl tickets and 4 pre-game field passes</li>
+                                        <li>Escorted into the home team tunnel for player intros prior to each home game</li>
+                                        <li><b>Projected bids at every home game: $1,500-2,500+</b></li>
+                                    </ul>      
+                                </div>
+                                <a class="btn btn-brand btn-block text-light shadow-none px-4 py-2" href="experiences.html#2">View More</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="item-listing item-y item-bg-white shadow-sm eq-height">
+                                
+                                <img class="img-fluid w-100 mb-3" src="./titansVIPexperiences.png">
+                                <h5>Post-Game Press Conference with Coach Vrabel and Titans Stars</h5>
+                                <div class="eq-height-content">
+                                    <ul>
+                                        <li>Attend the Titans post-game press conference to Coach Vrabel and Titans stars
+                                            address the media after the game</li>
+                                        <li>Chance to your very own group photo at the Media Podium</li>
+                                        <li>Packages includes 4 lower bowl seats, personal escort and VIP access to media press
+                                            conference</li>
+                                        <li><b>Projected bids at every home game: $1,500-2,500+</b></li>
+                                    </ul>      
+                                </div>
+                                <a class="btn btn-brand btn-block text-light shadow-none px-4 py-2" href="experiences.html#2">View More</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="item-listing item-y item-bg-white shadow-sm eq-height">
+                                
+                                <img class="img-fluid w-100 mb-3" src="./titansVIPexperiences.png">
+                                <h5>Honorary Personalized Game Ball Delivery to Your Seats from T-Tac and Titans
+                                    Cheerleaders</h5>
+                                <div class="eq-height-content">
+                                    <ul>
+                                        <li>During the game T-Rac and Titans Cheerleaders will make a special delivery directly
+                                            to your seats</li>
+                                        <li>You will get your very own Honorary Titans Game Ball with your name on it</li>
+                                        <li>1 delivery per quarter at $300 per game ball</li>
+                                        <li><b>Possible Revenues: up to $1,200 per game, x 8 games= $9,600</b></li>
+                                    </ul>      
+                                </div>
+                                <a class="btn btn-brand btn-block text-light shadow-none px-4 py-2" href="experiences.html#2">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	<footer>
+        <div class="top-footer py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 text-center">
+                                                <img style="width:60%" src="https://vafloc01.s3.amazonaws.com/WBStatic/site1104141/dist/img/TTF.png" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-2">
+                        <h4>Customer Service</h4>
+                        <ul class="list-unstyled">
+                          <li>			<a href="/iSynApp/appAccount.action?sid=1104141"  class="">Account</a>
+</li>
+                          <li><a href="/iSynApp/showPage.action?sid=1104141&pageName=howitworks">Bid by SMS</a></li>
+                          <li>			<a href="/iSynApp/showPage.action?sid=1104141&pageName=faq"  class="">FAQ</a>
+</li>
+                          <li>			<a href="/iSynApp/manageUserEmail!showEmailContactUsForm.action?sid=1104141"  class="">Contact Us</a>
+</li>
+                          <li>			<a href="/iSynApp/showAppUserProfile!showUserOrderHistory.action?sid=1104141&listPageMode=paidord"  class="">Order History</a>
+</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-2">
+                        <h4>Information</h4>
+                        <ul class="list-unstyled">
+                          <li><a href=" https://www.tennesseetitans.com/about-us/privacy-policy" target="_blank">Privacy Policy</a></li>
+                          <li><a href="https://www.tennesseetitans.com/about-us/terms-of-use" target="_blank">Terms of Use</a></li>
+                          <li>			<a href="/iSynApp/showPage.action?sid=1104141&pageName=sitemap"  class="">Site Map</a>
+</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-2">
+                        <h4>Auctions</h4>
+                        <ul class="list-unstyled">
+                          <li>			<a href="/iSynApp/allAuction.action?sid=1104141&rc=12"  class="">All Auctions</a>
+</li>
+                          <li>			<a href="/iSynApp/allAuction.action?rc=25&sid=1104141&pgmode2=closingsoon&sort=timeleft_asc"  class="">Closing Soon</a>
+</li>
+                          <li>			<a href="/iSynApp/allAuction.action?rc=12&sid=1104141&pgmode2=hotitems&sort=bidcount_desc"  class="">Popular Auctions</a>
+</li>
+                          <li>			<a href="/iSynApp/allAuction.action?rc=25&sid=1104141&pgmode2=justopened&sort=createts_desc"  class="">Just Opened</a>
+</li>
+                          <li>			<a href="/iSynApp/allAuction.action?rc=25&sid=1104141&pgmode2=recentlysold&sort=timeleft_desc&qMode=closed"  class="">Recently Sold</a>
+</li>
+                          <li>				<a href="/iSynApp/allProduct.action?sid=1104141&rc=12"  class="">Shop</a>
+</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-2">
+                        <h4>Follow Us</h4>
+                        <ul class="list-inline social-links">
+                            <li class="list-inline-item"><a href="https://twitter.com/titans" target="_blank"><span class="fab fa-twitter"></span></a></li>
+                            <li class="list-inline-item"><a href="https://www.facebook.com/titans" target="_blank"><span class="fab fa-facebook"></span></a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/titans/" target="_blank"><span class="fab fa-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer text-light">
+            <div class="container d-flex justify-content-between align-items-center">
+                <span class="text-muted"><small>&copy;2021 Titans Marketplace. All rights reserved</small></span>
+
+                
+                <div class="d-flex justify-content-center">
+                  <a href="http://www.commercedynamics.com/?utm_source=&utm_medium=Footer%20logo&utm_campaign=" target="_blank">
+                    <div class="power_container">
+                      <div class="float_block">
+                        <div class="cd_logo"><img src="https://vafloc01.s3.amazonaws.com/WBStatic/site1104141/dist/img/logo-cd.png" alt="commerce dynamics marketplace" height="42" /></div>
+                      </div>
+                      <div class="float_block">
+                        <div class="powered_by">POWERED BY</div>
+                        <div class="commerce_text">COMMERCE</div>
+                        <div class="dynamics_text">DYNAMICS</div>
+                        <div class="marketplaces">MARKETPLACE SOLUTIONS</div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <style>
+      #notificationalert {
+          width: 400px;
+          position: fixed;
+          bottom: -100%;
+          left: 20px;
+          z-index: 99999;
+          line-height: 17px;
+          transition: all ease 300ms;
+      }
+
+      #notificationalert.alerted {
+          bottom: 20px;
+      }
+
+      #notificationalert .close-notification {
+          background-color: #000;
+          color: #fff;
+          text-decoration: none;
+          font-weight: bold;
+          width: 20px;
+          height: 20px;
+          border-radius: 100%;
+          display: inline-block;
+          text-align: center;
+          line-height: 20px;
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          cursor: pointer;
+          transition: all ease 500ms;
+      }
+
+      #notificationalert .close-notification:hover {
+          transform: scale(1.3);
+      }
+    </style>
+    <div id="notificationalert" class="card card-default shadow-sm">
+        <div class="card-body">
+            <!-- <a href="#" class="close-notification">&times;</a> -->
+            <div class="row">
+                <div class="col-5">
+                    <a class="notilink" href=""><img id="notiimage" src="" class="img-fluid rounded-circle" alt=""></a>
+                </div>
+                <div class="col-7">
+                    <p class="mb-2 text-muted"><small>Someone from <b id="noticountry"></b><br>just placed a bid</small></p>
+                    <p class="mb-0"><a class="notilink text-dark" href="#"><b id="notiname"></b></a></p>
+                    <p class="text-muted mb-0 mt-1"><small>Just a minute ago</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+  <script src="/index.js"></script>
+  
+
+      
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
+  <script>
+      $(document).ready(function() {
+          
+          var notification_cookie = Cookies.get('notification')
+
+          $('.eq-height').matchHeight()
+          $('.eq-height-img').matchHeight()
+          //$('.index-promo-content').matchHeight()
+          
+          if(notification_cookie) {
+            $('.bottom-header, body').addClass('closed-notification')
+          }
+
+          $('#cd-ondemand-rams').ondemand({
+          site: 'https://nflauction.nfl.com',
+          siteId: 1100783,
+          primaryColor: "#000",
+          secondaryColor: "#023594",
+          background: "#f5f5f5",
+          titleWidget: "Live from NFL Auctions",
+          parameters: 'sort=bidcount_desc&qt[0].type=fieldsearch&qt[0].name=panname_partnerName_s&qt[0].value1=titans',
+          sslImg: true,
+          items: 6,
+          liveUpdate: false,
+          utmString: '&utm_source=osuStore&utm_medium=ondemand&utm_campaign=ramsOndemand&isyntrk-mktcampnm=nnnNflWidgBid',
+          template: 'widgetTemplate',
+          countdown: true
+        });
+
+          $('.init-search').on('click', function(e) {
+              e.preventDefault()
+              $(this).toggleClass('search')
+              $('.init-search-input').toggle().focus()
+          })
+
+          $('#close-notification').on('click', function(e) {
+            e.preventDefault()
+
+            $('.bottom-header, body').addClass('closed-notification')
+            Cookies.set('notification', true)
+          })
+
+
+  $('#search_results').on('mouseleave', function() {
+    $(this).hide()
+  })
+
+      $('.hide-history').on('click', function(e) {
+          e.preventDefault()
+          $('#bid-history').collapse('toggle')
+      })
+
+          
+      })
+  </script>
+
+
+
+</body>
+</html><!-- iSyn Generated By:i22-40; cache:Enabled -->
